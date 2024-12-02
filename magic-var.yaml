@@ -1,0 +1,7 @@
+---
+- hosts: seoul
+  become: true
+  tasks:
+    - name: Show ansible_facts
+      debug:
+        var: hostvars['serverA.example.com']['ansible_all_ipv4_addresses']

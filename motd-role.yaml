@@ -1,0 +1,6 @@
+---
+- name: use motd role
+  hosts: seoul
+  become: true
+  roles:
+    - motd
